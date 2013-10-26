@@ -1,0 +1,33 @@
+{
+  "name": "personal",
+  "description": "a personal web page",
+  "version": "0.1.0",
+  "author": "Beñat Espiña - @benatespina",
+  "homepage": "http://benatespina.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/benatespina/personal.git"
+  },
+  "license": [
+    {
+      "type": "Creative Commons"
+    }
+  ],
+  "dependencies": {
+    "i18n": "*"
+  },
+  "devDependencies": {
+    "express": "*",
+    "grunt": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-coffee": "*",
+    "grunt-contrib-compass": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*",
+    "jade": "*"
+  },
+  "engine": "node >= 0.10"
+}
