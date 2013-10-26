@@ -9,7 +9,7 @@ If you want to test in your localhost, you should install all the necessary [plu
     grunt
 Then, you should execute the following commands in another terminal tab:
     
-    cd ~/personal
+    cd ~/personal/app
     node server.js
 Now, you should type in your favourite browser the following url and that's all!
 
