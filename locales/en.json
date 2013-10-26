@@ -1,1 +1,28 @@
-{}
+{
+    "first"      : "Hi, my name is Beñat, I was born on March 25, 1990 in a fishing village named Santurtzi (Basque Country).",
+    "second"     : "I have studied a ",
+    "third"      : " from ",
+    "fourth"     : "I love new technologies, been my preferences everything related to web development -I am constantly learning about ",
+    "fifth"      : " PHP framework- and I like everything that is Apple, at least in innovation and excellence. I am passionate about ",
+    "sixth"      : " programming for iOS devices.",
+    "seventh"    : "Now, I am studying a ",
+    "eighth"     : " also at the ",
+    "nineth"     : ". Besides, I have just started a ",
+    "tenth"      : " at ",
+    "eleventh"   : "You can check any information about my experience and education at ",
+    "twelfth"    : " and ",
+    "thirteenth" : ". Apart of this, I have uploaded my ",
+    "fourteenth" : " in pdf format for anyone who wants.",
+    "fifteenth"  : "If you have any kind of question or doubt, do not hesitate to contact me by ",
+    "sixteenth"  : " or by ",
+    "seventeenth": ", I will be glad to answer you.",
+    "AUX"        : ".",
+    "AUX-2"      : ".",
+
+    "engineer": "five-year BS/MS in Computer Engineering",
+    "deusto"  : "University of Deusto",
+    "dessi"   : "Specialist diploma in Software solutions for the Internet",
+    "gade"    : "Bachelor's Degree in Business Administration and Management",
+    "uned"    : "The National Distance Education University",
+    "email"   : "email"
+}

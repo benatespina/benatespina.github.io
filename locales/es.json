@@ -3,7 +3,7 @@
     "second"     : "Soy ",
     "third"      : " por la ",
     "fourth"     : "Soy un fanático de las nuevas tecnologías pero si tengo que escoger algo, me interesa todo lo referente al desarrollo web -ando en constante aprendizaje con el framework PHP ",
-    "fifth"      : " y lo que representa el mundo de Apple, al menos, en el campo de la innovación y la excelencia. Me apasiona la programación en ",
+    "fifth"      : "- y lo que representa el mundo de Apple, al menos, en el campo de la innovación y la excelencia. Me apasiona la programación en ",
     "sixth"      : " para dispositivos iOS.",
     "seventh"    : "Actualmente, me encuentro estudiando un postgrado denominado ",
     "eighth"     : " también en la ",
@@ -16,11 +16,13 @@
     "fifteenth"  : "Sobre cualquier duda o cuestión que te pueda surgir no dudes en contactar conmigo tanto por ",
     "sixteenth"  : " como por ",
     "seventeenth": ", estaré encantado de responderte.",
+    "AUX"        : ".",
+    "AUX-2"      : ".",
 
     "engineer": "Ingeniero en Informática",
     "deusto"  : "Universidad de Deusto",
     "dessi"   : "Diploma de Especialización en Soluciones Software para Internet",
     "gade"    : "Grado en Administración y Dirección de Empresas",
     "uned"    : "UNED",
-    "email"   : "correo electroníco"
+    "email"   : "correo electrónico"
 }
