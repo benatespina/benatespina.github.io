@@ -26,8 +26,8 @@ module.exports = (grunt) ->
         compass:
             compile:
                 options:
-                    sassDir: "source/scss/"
-                    cssDir : "app/dev/css/"
+                    sassDir: "source/scss"
+                    cssDir : "app/dev/css"
 
         cssmin:
             minify:
@@ -53,8 +53,8 @@ module.exports = (grunt) ->
                     "app/js/routes.js": "app/dev/js/routes.js"]
 
         watch:
-            stylesheets: files: "source/scss/*.scss"    , tasks: "stylesheets"
-            scripts    : files: "source/coffee/*.coffee", tasks: "scripts"
+            stylesheets: files: "source/scss/**"  , tasks: "stylesheets"
+            scripts    : files: "source/coffee/**", tasks: "scripts"
             copy       :
                 files: ["source/jade/**", "resources/**", "locales/**"]
                 tasks: "copy"
