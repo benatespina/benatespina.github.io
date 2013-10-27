@@ -3,5 +3,5 @@ module.exports = (app) ->
         res.render "index.jade"
 
     app.get "/:locale", (req, res) ->
-        res.cookie 'locale', req.params.locale
+        res.cookie "locale", req.params.locale
         res.redirect "/"

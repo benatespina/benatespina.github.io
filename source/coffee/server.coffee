@@ -16,6 +16,7 @@ app.configure ->
     app.set "view engine", "jade"
     app.use express.static(__dirname + "/")
     app.use express.static(__dirname + "/resources/images/")
+    app.use express.static(__dirname + "/resources/")
     app.use express.cookieParser()
     app.use i18n.init
     routes app
