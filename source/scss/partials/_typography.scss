@@ -1,0 +1,35 @@
+//FONT TYPES
+.oregano {
+    font : {
+        family: "Oregano";
+        size  :  28px;
+    }
+    color: $lightGray;
+}
+
+//HEADING
+h1, h2, h3 {
+    margin-top   : 0;
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-size : 50px;
+    text-align: center;
+}
+
+h2 { font-size: 32px; }
+h3 { font-size: 24px; }
+
+//ELEMENTS TYPOGRAPHY
+.button-typography {
+    font: {
+        size      : 15px;
+        weight    : bold;
+    }
+    text: {
+        decoration: none;
+        align     : center;
+        shadow    : 1px 1px 1px $darkGray;
+    }
+}

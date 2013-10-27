@@ -1,0 +1,30 @@
+.button {
+    box-shadow   : inset 1px 1px 3px -4px #bdbdbd;
+    background   : linear-gradient(#f9f9f9 5%, #bababa 100%);
+    border-radius: 3px;
+    border       : 2px solid #dcdcdc;
+    display      : inline-block;
+    line-height  : 20px;
+    width        : 70px;
+    margin       : 3px;
+
+    @extend .button-typography;
+
+    &:hover {
+        background: linear-gradient(#bababa 5%, #f9f9f9 100%);
+    }
+    &:active {
+        position: relative;
+        top     : 1px;
+    }
+}
+
+.curriculum {
+    @extend .button;
+    width: 120px;
+}
+
+.email {
+    @extend .button;
+    width: 160px;
+}

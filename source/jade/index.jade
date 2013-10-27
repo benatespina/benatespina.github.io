@@ -1,6 +1,6 @@
 include ./base
 
-    body
+    body.oregano
         header
             .lang
                 a(href="/eu") eu
@@ -8,7 +8,7 @@ include ./base
                 a(href="/en") en
         article
             h1 Beñat Espiña
-            .img
+            .my-photo
                 img(alt="photo", src="photo-200x200.png")
             p
                 = __("first")
@@ -50,8 +50,8 @@ include ./base
                 = __("seventeenth")
         footer
             a.button(href=careers, target="_blank") Careers
-            a#curriculum.button(href="cv.pdf", target="_blank") Curriculum Vitae
-            a#email.button(href=email, target="_blank") benatespina@gmail.com
+            a.curriculum(href="cv.pdf", target="_blank") Curriculum Vitae
+            a.email(href=email, target="_blank") benatespina@gmail.com
             a.button(href=linkedin, target="_blank") LinkedIn
             a.button(href=twitter, target="_blank") Twitter
             a.button(href=github, target="_blank") GitHub

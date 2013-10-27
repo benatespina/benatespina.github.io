@@ -1,0 +1,44 @@
+@media screen and (min-width: 1000px) {
+    body {
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+    footer {
+        max-width: 380px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .my-photo {
+        border-radius   : 0;
+        padding         : 0;
+        margin          : 0;
+        background-color: transparent;
+        float           : none;
+        text-align      : center;
+    }
+
+    .lang a {
+        font-size       : 40px;
+    }
+
+    .my-photo > img {
+        height          : 50%;
+        width           : 50%;
+        border-radius   : 5em;
+    }
+
+    .button, #email, #curriculum {
+        font-size       : 18px;
+        width           : 80%;
+        margin-bottom   : 0.3em;
+        margin-left     : 10%;
+        margin-right    : 10%;
+    }
+
+    article {
+        text-align      : center;
+    }
+}
