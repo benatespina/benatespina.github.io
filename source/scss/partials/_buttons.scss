@@ -1,12 +1,12 @@
-.button {
-    box-shadow   : inset 1px 1px 3px -4px #bdbdbd;
-    background   : linear-gradient(#f9f9f9 5%, #bababa 100%);
-    border-radius: 3px;
-    border       : 2px solid #dcdcdc;
-    display      : inline-block;
-    line-height  : 20px;
-    width        : 70px;
-    margin       : 3px;
+.i-careers, .i-cv, .i-email, .i-linkedin,.i-twitter, .i-github, .i-blog {
+    box-shadow    : inset 1px 1px 3px -4px #bdbdbd;
+    background    : linear-gradient(#f9f9f9 5%, #bababa 100%);
+    border-radius : 3px;
+    border        : 2px solid #dcdcdc;
+    display       : inline-block;
+    line-height   : 20px;
+    width         : 70px;
+    margin        : 3px;
 
     @extend .button-typography;
 
@@ -14,17 +14,18 @@
         background: linear-gradient(#bababa 5%, #f9f9f9 100%);
     }
     &:active {
-        position: relative;
-        top     : 1px;
+        position  : relative;
+        top       : 1px;
     }
 }
 
-.curriculum {
-    @extend .button;
-    width: 120px;
+.i-cv {
+    @extend .i-careers;
+    width         : 120px;
 }
 
-.email {
-    @extend .button;
-    width: 160px;
+.i-email {
+    @extend .i-careers;
+    width         : 160px;
+    font-size     : 16px;
 }

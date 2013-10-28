@@ -24,12 +24,11 @@ h3 { font-size: 24px; }
 //ELEMENTS TYPOGRAPHY
 .button-typography {
     font: {
-        size      : 15px;
-        weight    : bold;
+        size  : 18px;
+        weight: bold;
     }
     text: {
-        decoration: none;
-        align     : center;
-        shadow    : 1px 1px 1px $darkGray;
+        align : center;
+        shadow: 1px 1px 1px $darkGray;
     }
 }

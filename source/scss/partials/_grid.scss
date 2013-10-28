@@ -3,16 +3,16 @@ html   {
     background-image : $linenTexture;
 }
 
-header {
-    height           : auto;
-    max-width        : 75%;
-    margin-bottom    : 1em;
-}
-
 body   {
     max-width        : 800px;
     margin-left      : 10%;
     margin-right     : 10%;
+
+    header {
+        height       : auto;
+        max-width    : 75%;
+        margin-bottom: 1em;
+    }
 
     article {
         text-align   : justify;
