@@ -13,9 +13,16 @@ pids
 logs
 results
 
+#Development files
 npm-debug.log
 node_modules
 app
+
+#Production files
+js
+*.css
+*.js
+templates
 
 # OS X files
 .DS_Store

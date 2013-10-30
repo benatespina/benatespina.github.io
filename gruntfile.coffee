@@ -13,15 +13,22 @@ module.exports = (grunt) ->
 
 
         copy:
-            app:
+            dev:
                 files: [{
                     expand: true
                     cwd   : "source/jade/"
                     src   : "**"
                     dest  : "app/templates/"},
                     {src  : ["resources/**", "locales/**"], dest  : "app/"}]
+            prod:
+                files: [
+                    expand: true
+                    cwd   : "app/"
+                    src   : ["**", "!dev/**"]
+                    dest  : ""]
 
-        clean: ["app/resources", "app/locales", "app/templates"]
+        clean: ["app/resources", "app/locales", "app/templates", "templates",
+            "js", "*.js", "*.css"]
 
         compass:
             compile:
@@ -57,7 +64,7 @@ module.exports = (grunt) ->
             scripts    : files: "source/coffee/**", tasks: "scripts"
             copy       :
                 files: ["source/jade/**", "resources/**", "locales/**"]
-                tasks: "copy"
+                tasks: "copy:dev"
 
 
     grunt.loadNpmTasks "grunt-contrib-clean"
@@ -74,5 +81,8 @@ module.exports = (grunt) ->
     grunt.registerTask "scripts", "Compiles the JavaScript files." , [
         "coffee", "uglify"]
 
+    grunt.registerTask "prod", "Executes all taks for production.",  [
+        "copy:prod"]
+
     grunt.registerTask "default", "Main Grunt. Executes all tasks.", [
-        "clean", "copy", "stylesheets", "scripts", "watch"]
+        "clean", "copy:dev", "stylesheets", "scripts", "watch"]
