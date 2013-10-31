@@ -23,3 +23,9 @@ app.configure ->
 
 http.createServer(app).listen app.get("port"), ->
     console.log "Express server listening on port " + app.get "port"
+
+setInterval ->
+    http.get "benatespina.herokuapp.com", ->
+        console.log("Heroku, you cannot sleep!")
+
+, 3300000       #3300000 miliseconds = 55 mins
