@@ -24,5 +24,7 @@
     "dessi"   : "Specialist diploma in Software solutions for the Internet",
     "gade"    : "Bachelor's Degree in Business Administration and Management",
     "uned"    : "The National Distance Education University",
-    "email"   : "email"
+    "email"   : "email",
+
+    "metaDescription" : "Beñat Espiña's personal web page. Software Engineer."
 }

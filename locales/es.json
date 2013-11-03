@@ -24,5 +24,7 @@
     "dessi"   : "Diploma de Especialización en Soluciones Software para Internet",
     "gade"    : "Grado en Administración y Dirección de Empresas",
     "uned"    : "UNED",
-    "email"   : "correo electrónico"
+    "email"   : "correo electrónico",
+
+    "metaDescription" : "Web personal de Beñat Espiña, Ingeniero en Informática."
 }
