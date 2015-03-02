@@ -1,0 +1,22 @@
+#menu-bar {
+  display: none;
+  background: $darkBlue;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+}
+
+.display-none {
+    display: block;
+    -webkit-transition: opacity 1s ease-out;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.display {
+    opacity: 1;
+}
+
+.line-break {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}

@@ -1,0 +1,137 @@
+include base
+
+body#top
+  header
+    #menu-bar
+      include social
+  #video_element
+    .huge-title
+      img.headshot.wow.tada(src='img/me-255x255.png', alt='Beñat Espiña', data-wow-delay='3s', data-wow-offset='80', data-wow-duration='1s')
+      h1.wow.bounceInDown(data-wow-offset='80', data-wow-duration='3s') Be&ntilde;at Espi&ntilde;a
+      include social
+    #godown.floating=__('godown')
+  .wrapper
+    .whitecontainer
+      .content
+        p=__('aboutMe')
+    .parallax1
+      .content
+        .half_column1.wow.fadeInLeftBig(data-wow-offset='80', data-wow-duration='2s')
+          p=__('skills')
+        .half_column2.wow.fadeInUpBig(data-wow-offset='80', data-wow-duration='2s')
+          .one_third.centered.skill
+            span.icon-symfony
+            span.icon-php
+            span.icon-mysql
+            span.icon-doctrine
+            span.icon-git
+          .one_third.centered.skill
+            span.icon-html5
+            span.icon-css3
+            span.icon-javascript
+            span.icon-jquery
+            span.icon-sass
+          .one_third.centered.skill
+            span.icon-backbone
+            span.icon-java
+            span.icon-mongodb
+            span.icon-nodejs
+            span.icon-nginx
+    .whitecontainer
+      .professional-content
+        .two_third_last.wow.fadeInUpBig(data-wow-offset='80', data-wow-duration='2s')
+          h3=__('developer')
+          h5 Boletus Network S.L.
+          span.date=__('boletusDate')
+          p=__('boletusDescription')
+          h3=__('developer')
+          h5 BoSo Group S.L.
+          span.date=__('bosoDate')
+          p=__('bosoDescription')
+          h3=__('internDeveloper')
+          h5 Serikat
+          span.date=__('serikatDate')
+          p=__('serikatDescription')
+        .bigspace.line-break
+      .education-content
+        .two_third_last.wow.fadeInUpBig(data-wow-offset='80', data-wow-duration='2s')
+          h3=__('computerEngineering')
+          h5=__('universityOfDeusto')
+          span.date=__('computerEngineeringDate')
+        .two_third_last.wow.fadeInUpBig(data-wow-offset='80', data-wow-duration='2s')
+          h3=__('postgraduate')
+          h5=__('universityOfDeusto')
+          span.date=__('postgraduateDate')
+        .two_third_last.wow.fadeInUpBig(data-wow-offset='80', data-wow-duration='2s')
+          h3=__('mongodbCertificate')
+          h5=__('mongodbUniversity')
+          span.date=__('mongodbCertificateDate')
+    .parallax1
+      .portfolio-content
+        .center-align
+          .one_third.wow.fadeInLeftBig.animated(data-wow-offset='80', data-wow-duration='2s')
+            .infopanel
+              a.fancybox(href='http://kreta.io' target='_blank')
+                .eye
+                  img(src='img/kreta.png', alt='Kreta')
+              h5 Kreta
+                a(href='https://github.com/kreta-io/kreta')
+                  span.buzz.project.icon-github
+              p
+                | Modern PHP written and open source project manager.
+                br
+          .one_third.wow.fadeInUpBig.animated(data-wow-offset='80', data-wow-duration='2s')
+            .infopanel
+              a.fancybox(href='http://boletus.com' target='_blank')
+                .eye
+                  img(src='img/boletus.png', alt='Boletus')
+              h5 Boletus
+              p
+                | Ahorra y gana dinero con los comercios de tu ciudad.
+          .one_third_last.wow.fadeInRightBig.animated(data-wow-offset='80', data-wow-duration='2s')
+            .infopanel
+              a.fancybox
+                .eye
+                  img(src='img/stackexchangeapiclient.png', alt='Stack Exchange Api Client')
+              h5 Stack Exchange Api Client
+                a(href='https://github.com/benatespina/StackExchangeApiClient')
+                  span.buzz.project.icon-github
+              p
+                | Stack Exchange's version 2.2 REST API PHP client.
+          .one_third.wow.fadeInLeftBig(data-wow-offset='80', data-wow-duration='2s')
+            .infopanel
+              a.fancybox
+                .eye
+                  img(src='img/vagrant.png', alt='Vagrant')
+              h5 Puppet Vagrant VM
+                a(href='https://github.com/benatespina/default-vagrant')
+                  span.buzz.project.icon-github
+              p
+                | PHP development focused VM with different envs that provides some other useful tools.
+          .one_third.wow.fadeInUpBig(data-wow-offset='80', data-wow-duration='2s')
+            .infopanel
+              a.fancybox(href='http://myclapboard.com' target='_blank')
+                .eye
+                  img(src='img/myclapboard.png', alt='myClapboard')
+              h5 myClapboard
+                a(href='https://github.com/myClapboard')
+                  span.buzz.project.icon-github
+              p
+                | Social network that geared to film and television.
+          .one_third_last.wow.fadeInRightBig(data-wow-offset='80', data-wow-duration='2s')
+            .infopanel
+              a.fancybox(href='http://alotofus.com' target='_blank')
+                .eye
+                  img(src='img/alotofus.png', alt='Alotofus')
+              h5 Alotofus
+              p
+                | Ideal jobs for true talents.
+    footer
+      p.copyright Copyright 2015 - Be&ntilde;at Espi&ntilde;a
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
+    script.
+      if (!window.jQuery) {
+        document.write('<script src="js/jquery-1.11.2.min.js"><\/script>');
+      }
+    script(type='text/javascript', src='js/main.js')
+

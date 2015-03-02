@@ -1,30 +1,8 @@
 {
-    "first"      : "Kaixo, Beñat nauzue, 1990eko martxoaren 25ean jaiotako santurtziarra (Bizkaia).",
-    "second"     : " ",
-    "third"      : " naiz, ",
-    "AUX"        : " bost urtez ikasketak burutzen ibili ondoren.",
-    "fourth"     : "Teknologia berrien zale amorratua naiz, baina zerbait apaitzekotan, web aplikazioen garapenaz edozer interesatzen zait (",
-    "fifth"      : " PHP framework-aren erabilera hobetzen jarraitzen dut egunero) eta Apple-en mundu guzti horrek adierazten duena, inobazio eta bikaintasunaren arloan, batez ere. ",
-    "sixth"      : " lengoaiak asko erakartzen nau, iOS gailuetarako programazioa, hain zuzen ere.",
-    "seventh"    : "Gaur, graduondo bat ikasten dihardut, ",
-    "eighth"     : " deiturikoa; Ingeniaritza bezala ",
-    "nineth"     : ". Aldi berean, bigarren karrera batekin hasi naiz, ",
-    "tenth"      : " ",
-    "AUX-2"      : "-en.",
-    "eleventh"   : "Lan zein formakuntza akademikoari buruzko edozein datu ",
-    "twelfth"    : " edota ",
-    "thirteenth" : "-en kontsultatu dezakezu. Bestalde, nahi duenarentzat nire ",
-    "fourteenth" : " igo dut pdf formatuan.",
-    "fifteenth"  : "Edozein galdera edota zalantzaren aurrean, beldurrik gabe galdetu iezadazu bai ",
-    "sixteenth"  : "aren bitartez bai ",
-    "seventeenth": " kontuaren bitartez, erantzuteko prest egongo naiz eta.",
-
-    "engineer": "Ingeniari Informatikoa",
-    "deusto"  : "Deustuko Unibertsitatean",
-    "dessi"   : "Interneterako Software Soluzioen Espezializazio Diploma",
-    "gade"    : "Enpresen Administrazio eta Zuzendaritzan Gradua",
-    "uned"    : "UNED",
-    "email"   : "mezu elektroniko",
-
-    "metaDescription" : "Beñat Espiña, Informatikan Ingeniaria denaren webgune pertsonala."
+	"metaDescription": "Informatikan ingeniaria den Beñat Espiñaren webgune pertsonala",
+	"metaKeywords": "benatespina, development, web, php, js",
+  "godown": "Scroll down to learn more",
+	"aboutMe": "Informatikan ingeniaria eta web garatzailea.",
+	"from": "Santurtzikoa.",
+	"skills": "skills"
 }

@@ -1,7 +1,7 @@
 {
-  "name": "personal",
-  "description": "a personal web page",
-  "version": "0.1.0",
+  "name": "benatespina.com",
+  "description": "benatespina's personal web page",
+  "version": "2.0.0",
   "author": "Beñat Espiña - @benatespina",
   "homepage": "http://benatespina.com",
   "repository": {
@@ -10,24 +10,32 @@
   },
   "license": [
     {
-      "type": "Creative Commons"
+      "type": "MIT"
     }
   ],
   "dependencies": {
-    "express": "~3.4.4",
+    "body-parser": "^1.3.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.1.0",
+    "express": "~4.4.3",
+    "express-session": "^1.2.1",
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
     "i18n": "~0.4.1",
-    "jade": "~0.35.0"
+    "jade": "^1.3.1"
   },
   "devDependencies": {
     "grunt": "*",
     "grunt-contrib-clean": "*",
     "grunt-contrib-coffee": "*",
     "grunt-contrib-compass": "*",
+    "grunt-contrib-concat": "^0.5.0",
     "grunt-contrib-copy": "*",
     "grunt-contrib-cssmin": "*",
     "grunt-contrib-jshint": "*",
-    "grunt-contrib-uglify": "*",
-    "grunt-contrib-watch": "*"
+    "grunt-contrib-uglify": "^0.7.0",
+    "grunt-contrib-watch": "*",
+    "grunt-uncss": "^0.4.0"
   },
   "engines": {
     "node": "0.10.x",

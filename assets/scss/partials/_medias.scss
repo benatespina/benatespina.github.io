@@ -1,0 +1,284 @@
+@media all and (max-width: 1024px) {
+  #socialsection {
+    width: 90%;
+    height: 40px;
+    opacity: 0;
+    left: 5%;
+    bottom: -1px;
+    position: fixed;
+    z-index: 105;
+    color: #ffffff;
+    border-radius: 3px 3px 0 0;
+    transition: all 0.3s ease-in-out;
+  }
+  .mobileSpace {
+    visibility: visible;
+    clear: both;
+    height: 60px;
+  }
+  .content {
+    width: 80%;
+  }
+  h1 {
+    font-size: 65px;
+  }
+  .huge-title {
+    top: 25%;
+  }
+  .hero {
+    width: 80%;
+  }
+  .parallax1, .parallax2 {
+    overflow: auto;
+    padding: 80px 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: scroll;
+    width: 100%;
+    height: 100%;
+  }
+  #contact_form {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  #Skills {
+    .half_column1, .half_column2 {
+      width: 100%;
+    }
+  }
+  #Contact {
+    .half_column1, .half_column2 {
+      width: 100%;
+    }
+  }
+  #Skills .half_column2 {
+    margin-top: 50px;
+  }
+  #Portfolio {
+    .one_third, .one_third_last {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+  .bigspace {
+    height: 1em;
+  }
+  #CV .one_third h2 {
+    margin: 0;
+  }
+  .center-align {
+    margin-left: 4%;
+  }
+  .one_third {
+    text-align: left;
+    width: 100%;
+    margin-right: 0%;
+    &.skill {
+      text-align: left;
+      width: 49%;
+      margin-right: 1%;
+    }
+  }
+  .one_third_last {
+    text-align: left;
+    width: 100%;
+    &.skill {
+      text-align: left;
+      width: 49%;
+      margin-right: 0%;
+    }
+  }
+  .two_third_last {
+    text-align: left;
+    width: 100%;
+  }
+  .huge-title {
+    width: 80%;
+    top: 25%;
+  }
+  blockquote {
+    &:before {
+      width: 10%;
+    }
+    padding: 0;
+    p {
+      width: 90%;
+      text-align: left;
+      font-size: 32px;
+    }
+  }
+  #mc_embed_signup input.email {
+    width: 93%;
+  }
+  .clear {
+    margin-top: 20px;
+  }
+  #mc_embed_signup {
+    height: auto;
+    input[type="submit"] {
+      margin: 3% 0 0 3%;
+      float: none;
+      width: auto;
+    }
+  }
+}
+
+@media all and (max-width: 640px) {
+  p {
+    font-size: 19px;
+  }
+  .half_column1 {
+    float: left;
+    margin-top: 5%;
+    text-align: center;
+    width: 100%;
+  }
+  .half_column2 {
+    float: right;
+    margin-top: 5%;
+    text-align: center;
+    width: 100%;
+  }
+  .half_column1 h2, .half_column2 h2, .half_column1 h3, .half_column2 h3, .half_column1 h4, .half_column2 h4 {
+    text-align: center;
+  }
+  .header-container {
+    width: 600px;
+  }
+  .hero {
+    .one_third, .one_third_last {
+      width: 47%;
+    }
+  }
+  #menu-bar a span {
+    font-size: 2em;
+  }
+  .education-content, .professional-content {
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 568px) {
+  .content {
+    text-align: center;
+  }
+  [class^="icon-"], [class*=" icon-"] {
+    margin: 0;
+  }
+  .social {
+    font-size: 2em;
+  }
+  .one_third_last.skill, .one_third.skill {
+    font-size: 65%;
+    margin: 40px auto 0;
+    text-align: left;
+    width: 70%;
+  }
+  .two_third_last {
+    text-align: center;
+    h5 {
+      display: inherit;
+      margin: inherit;
+    }
+  }
+  .nav ul li {
+    padding: 8px 0 8px 0;
+  }
+  #godown {
+    display: none;
+  }
+  .hero {
+    .one_third, .one_third_last {
+      width: 100%;
+    }
+  }
+  blockquote {
+    p {
+      font-size: 24px;
+      width: 80%;
+    }
+    &:before {
+      width: 20%;
+      top: -11px;
+    }
+  }
+  h1 {
+    font-size: 40px;
+    padding-bottom: 10px;
+  }
+  h4 {
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  h3 {
+    font-size: 20px;
+    margin: 0 0 25px;
+  }
+  h5 {
+    font-size: 12px;
+    text-align: center;
+  }
+  .header-container {
+    width: 90%;
+    padding: 0;
+  }
+  .content {
+    width: 80%;
+  }
+  .huge-title {
+    width: 80%;
+    top: 30%;
+  }
+  #mc_embed_signup input.email {
+    width: 88%;
+  }
+  .button-white {
+    [class^="icon-"]:before, [class*=" icon-"]:before {
+      font-size: 18px;
+    }
+    font-size: 16px;
+    padding: 15px 20px 18px;
+    &:hover {
+      font-size: 16px;
+      padding: 15px 20px 18px;
+    }
+  }
+  .logo {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+  }
+  .small {
+    clear: left;
+    display: table;
+    margin-top: 20px;
+    position: relative;
+  }
+  #menu-bar {
+    height: initial;
+    a span {
+      font-size: 1em;
+      padding: 1em 10px;
+    }
+  }
+}
+
+@media all and (max-width: 360px) {
+  [class^="icon-"], [class*=" icon-"] {
+    display: inline-block;
+    margin: 0;
+  }
+  .one_third_last.skill, .one_third.skill {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
+}
