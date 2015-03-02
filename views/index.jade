@@ -1,24 +1,23 @@
 include base
-
-body#top
+body
   header
     #menu-bar
       include social
-  #video_element
+  .main-container
     .huge-title
-      img.headshot.wow.tada(src='img/me-255x255.png', alt='Beñat Espiña', data-wow-delay='3s', data-wow-offset='80', data-wow-duration='1s')
-      h1.wow.bounceInDown(data-wow-offset='80', data-wow-duration='3s') Be&ntilde;at Espi&ntilde;a
+      img.headshot(src='me-255x255.png', alt='Beñat Espiña')
+      h1 Be&ntilde;at Espi&ntilde;a
       include social
     #godown.floating=__('godown')
   .wrapper
-    .whitecontainer
+    .container
       .content
         p=__('aboutMe')
-    .parallax1
+    .parallax
       .content
-        .half_column1.wow.fadeInLeftBig(data-wow-offset='80', data-wow-duration='2s')
+        .half_column1
           p=__('skills')
-        .half_column2.wow.fadeInUpBig(data-wow-offset='80', data-wow-duration='2s')
+        .half_column2
           .one_third.centered.skill
             span.icon-symfony
             span.icon-php
@@ -37,9 +36,9 @@ body#top
             span.icon-mongodb
             span.icon-nodejs
             span.icon-nginx
-    .whitecontainer
+    .container
       .professional-content
-        .two_third_last.wow.fadeInUpBig(data-wow-offset='80', data-wow-duration='2s')
+        .two_third_last
           h3=__('developer')
           h5 Boletus Network S.L.
           span.date=__('boletusDate')
@@ -54,84 +53,73 @@ body#top
           p=__('serikatDescription')
         .bigspace.line-break
       .education-content
-        .two_third_last.wow.fadeInUpBig(data-wow-offset='80', data-wow-duration='2s')
+        .two_third_last
           h3=__('computerEngineering')
           h5=__('universityOfDeusto')
           span.date=__('computerEngineeringDate')
-        .two_third_last.wow.fadeInUpBig(data-wow-offset='80', data-wow-duration='2s')
+        .two_third_last
           h3=__('postgraduate')
           h5=__('universityOfDeusto')
           span.date=__('postgraduateDate')
-        .two_third_last.wow.fadeInUpBig(data-wow-offset='80', data-wow-duration='2s')
+        .two_third_last
           h3=__('mongodbCertificate')
           h5=__('mongodbUniversity')
           span.date=__('mongodbCertificateDate')
-    .parallax1
+    .parallax
       .portfolio-content
         .center-align
-          .one_third.wow.fadeInLeftBig.animated(data-wow-offset='80', data-wow-duration='2s')
+          .one_third
             .infopanel
-              a.fancybox(href='http://kreta.io' target='_blank')
-                .eye
-                  img(src='img/kreta.png', alt='Kreta')
+              a(href='http://kreta.io' target='_blank')
+                  img(src='kreta.png', alt='Kreta')
               h5 Kreta
                 a(href='https://github.com/kreta-io/kreta')
                   span.buzz.project.icon-github
               p
                 | Modern PHP written and open source project manager.
                 br
-          .one_third.wow.fadeInUpBig.animated(data-wow-offset='80', data-wow-duration='2s')
+          .one_third
             .infopanel
-              a.fancybox(href='http://boletus.com' target='_blank')
-                .eye
-                  img(src='img/boletus.png', alt='Boletus')
+              a(href='http://boletus.com' target='_blank')
+                  img(src='boletus.png', alt='Boletus')
               h5 Boletus
               p
                 | Ahorra y gana dinero con los comercios de tu ciudad.
-          .one_third_last.wow.fadeInRightBig.animated(data-wow-offset='80', data-wow-duration='2s')
+          .one_third_last
             .infopanel
-              a.fancybox
-                .eye
-                  img(src='img/stackexchangeapiclient.png', alt='Stack Exchange Api Client')
+              a
+                  img(src='stackexchangeapiclient.png', alt='Stack Exchange Api Client')
               h5 Stack Exchange Api Client
                 a(href='https://github.com/benatespina/StackExchangeApiClient')
                   span.buzz.project.icon-github
               p
                 | Stack Exchange's version 2.2 REST API PHP client.
-          .one_third.wow.fadeInLeftBig(data-wow-offset='80', data-wow-duration='2s')
+          .one_third
             .infopanel
-              a.fancybox
-                .eye
-                  img(src='img/vagrant.png', alt='Vagrant')
+              a
+                  img(src='vagrant.png', alt='Vagrant')
               h5 Puppet Vagrant VM
                 a(href='https://github.com/benatespina/default-vagrant')
                   span.buzz.project.icon-github
               p
                 | PHP development focused VM with different envs that provides some other useful tools.
-          .one_third.wow.fadeInUpBig(data-wow-offset='80', data-wow-duration='2s')
+          .one_third
             .infopanel
-              a.fancybox(href='http://myclapboard.com' target='_blank')
-                .eye
-                  img(src='img/myclapboard.png', alt='myClapboard')
+              a(href='http://myclapboard.com' target='_blank')
+                  img(src='myclapboard.png', alt='myClapboard')
               h5 myClapboard
                 a(href='https://github.com/myClapboard')
                   span.buzz.project.icon-github
               p
                 | Social network that geared to film and television.
-          .one_third_last.wow.fadeInRightBig(data-wow-offset='80', data-wow-duration='2s')
+          .one_third_last
             .infopanel
-              a.fancybox(href='http://alotofus.com' target='_blank')
-                .eye
-                  img(src='img/alotofus.png', alt='Alotofus')
+              a(href='http://alotofus.com' target='_blank')
+                  img(src='alotofus.png', alt='Alotofus')
               h5 Alotofus
               p
                 | Ideal jobs for true talents.
     footer
       p.copyright Copyright 2015 - Be&ntilde;at Espi&ntilde;a
     script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
-    script.
-      if (!window.jQuery) {
-        document.write('<script src="js/jquery-1.11.2.min.js"><\/script>');
-      }
     script(type='text/javascript', src='js/main.js')
-
