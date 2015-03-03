@@ -8,6 +8,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-uncss');
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         meta: {
@@ -116,6 +117,13 @@ module.exports = function(grunt) {
             target: {
                 files: {
                     'public/main.min.js': ['public/js/main.js']
+                }
+            }
+        },
+        uncss: {
+            dist: {
+                files: {
+                    'assets/scss/NEW.css': ['views/index.html']
                 }
             }
         },

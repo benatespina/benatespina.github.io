@@ -29,7 +29,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-#menu-bar a span {
+#menu-bar a span, #menu-bar #lang-selector {
   transition: all 0.3s ease-in-out;
   color: $turquoise;
   font-size: 2.5em;

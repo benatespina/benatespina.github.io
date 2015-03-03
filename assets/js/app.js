@@ -3,7 +3,7 @@
 
     $(function () {
         var didScroll = false,
-            icon = $(".huge-title, #godown"),
+            icon = $('.huge-title, #godown, .main-container#lang-selector'),
             $window = $(window),
             distance = $('.wrapper').offset().top,
             $menu = $('#menu-bar'),

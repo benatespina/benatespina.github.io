@@ -1,6 +1,23 @@
 {
   "metaDescription": "Personal website of Beñat Espiña, software engineer",
-  "metaKeywords": "benatespina, desvelopment, web, php, js",
-  "aboutMe": "Software engineer and web developer",
-  "from": "from Basque Country"
+  "metaKeywords": "benatespina, development, web, php, js",
+  "godown": "Scroll down to learn more",
+  "aboutMe": "Hi, I'm Beñat Espiña, Software engineer born on March 25, 1990 in a fishing village named Santurtzi (Basque Country). I really love web development and life-long learner. I am fan of BDD methodology, I really like the green color of tests, obsessed of clean code and the good Software architectures. Today, I work in Boletus Network developing an app with the same name.",
+  "skills": "PHP and JavaScript. Developing web apps with Symfony and Backbone.js. Somemtimes, Node.js could be a good alternative. Interesting in Sass improving CSS3 code. MySQL and MongoDB as databases. Obsessed with tests coverage, modular architectures and clean code.",
+  "postgraduate": "Postgraduate in Software solutions for the Internet",
+  "universityOfDeusto": "University of Deusto",
+  "postgraduateDate": "September 2013 - March 2014",
+  "computerEngineering": "Computer Engineering",
+  "computerEngineeringDate": "September 2008 - September 2013",
+  "developer": "Developer",
+  "boletusDate": "September 2014 - Now",
+  "boletusDescription": "Technical analysis and development of Boletus, webapp of geolocation offers. Technologies: Symfony2, PHP, Twig, HTML5, Sphinx, MongoDB, MySQL, Doctrine, CSS3, Sass, JavaScript, jQuery, PHPSpec, Behat, Vagrant, Git.",
+  "bosoDate": "March 2014 - August 2014",
+  "bosoDescription": "Technical analysis and development of Alotofus. Technologies: Symfony2, PHP, Twig, HTML5, MySQL, Doctrine, CSS3, Sass, Compass, JavaScript, CoffeeScript, jQuery, BackBone.js, PHPSpec, Behat, Vagrant, Git, Jenkins, Scrum.",
+  "internDeveloper": "Intern Developer",
+  "serikatDate": "December 2013 - March 2014",
+  "serikatDescription": "Technical Analysis and programming for the city of Bilbao (Cimubisa). Technologies: Java, SQL Server, JSP, Ajax, JavaScript, jQuery, Struts, JAXB, CSS, JSTL, Maven, Tomcat, XSD, XML Schema.",
+  "mongodbCertificate": "M101JS: MongoDB for Node.js Developers",
+  "mongodbUniversity": "MongoDB University (Online)",
+  "mongodbCertificateDate": "February 2014 - March 2014"
 }

@@ -4,17 +4,17 @@
   height: 80px;
   width: 100%;
   position: fixed;
-}
-
-.display-none {
-  display: block;
-  -webkit-transition: opacity 1s ease-out;
-  opacity: 0;
-  overflow: hidden;
-}
-
-.display {
-  opacity: 1;
+  #lang-selector {
+    float: left;
+    a {
+      color: $turquoise;
+      margin-right: 20px;
+      &:hover {
+        color: $white;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
 }
 
 .line-break {
