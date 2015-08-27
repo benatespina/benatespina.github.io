@@ -1,0 +1,176 @@
+// This file is part of the benatespina.com.
+//
+// Copyright (c) 2015 Beñat Espiña <benatespina@gmail.com>
+//
+// For the full copyright and license information, please view the LICENSE
+// file that was distributed with this source code.
+//
+// @author Beñat Espiña <benatespina@gmail.com>
+
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: 'icomoon', 'sans-serif';
+  font-size: 5em;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  margin: 4%;
+  speak: none;
+  text-transform: none;
+  transition: all .3s ease-in-out;
+  -webkit-font-smoothing: antialiased;
+}
+
+.icon-mail:before {
+  content: '\e600';
+}
+
+.icon-twitter:before {
+  content: '\e601';
+}
+
+.icon-feed:before {
+  content: '\e602';
+}
+
+.icon-github:before {
+  content: '\e603';
+}
+
+.icon-linkedin:before {
+  content: '\e604';
+}
+
+.icon-stackoverflow:before {
+  content: '\e605';
+}
+
+.icon-git:before {
+  content: '\e607';
+}
+
+.icon-mysql:before {
+  content: '\e606';
+}
+
+.icon-nodejs:before {
+  content: '\e619';
+}
+
+.icon-html5:before {
+  content: '\e636';
+}
+
+.icon-java:before {
+  content: '\e638';
+}
+
+.icon-php:before {
+  content: '\e63d';
+}
+
+.icon-css3:before {
+  content: '\e649';
+}
+
+.icon-sass:before {
+  content: '\e64b';
+}
+
+.icon-jquery:before {
+  content: '\e650';
+}
+
+.icon-backbone:before {
+  content: '\e652';
+}
+
+.icon-symfony:before {
+  content: '\e657';
+}
+
+.icon-doctrine:before {
+  content: '\e674';
+}
+
+.icon-nginx:before {
+  content: '\e676';
+}
+
+.icon-javascript:before {
+  content: '\e681';
+}
+
+.icon-mongodb:before {
+  content: '\e6a4';
+}
+
+.social {
+  font-size: 2em;
+}
+
+.social--right {
+  float: right;
+
+  .social__icon {
+    font-size: 1em;
+    color: $turquoise;
+
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+.social__icon {
+  color: $dark-blue;
+  font-size: 3em;
+  margin: 5px;
+  padding: 10px;
+
+  &:hover {
+    color: $turquoise;
+  }
+}
+
+.social__icon--buzz {
+  @extend %buzz;
+}
+
+.skill {
+  color: $dark-blue;
+
+  &:hover {
+    color: $turquoise;
+  }
+}
+
+@media all and (max-width: 360px) {
+  [class^="icon-"],
+  [class*=" icon-"] {
+    display: inline-block;
+  }
+
+  .skill {
+    margin: 10px;
+  }
+
+  .social__icon {
+    font-size: 1em;
+    padding: 0;
+  }
+}
+
+@media all and (max-width: 475px) {
+  .social__icon {
+    font-size: 1em;
+    padding: 0;
+  }
+}
+
+@media all and (min-width: 568px) {
+  .social {
+    font-size: inherit;
+  }
+}

@@ -7,20 +7,32 @@
 //
 // @author Beñat Espiña <benatespina@gmail.com>
 
-.go-down {
-  @extend %floating;
-  bottom: 20px;
-  color: $white;
+.menu {
+  background: $dark-blue;
+  color: $turquoise;
+  display: none;
+  float: right;
+  font-size: 2.5em;
   height: 80px;
-  left: 0;
+  padding: .5em 10px;
   position: fixed;
-  right: 0;
-  text-align: center;
   width: 100%;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+@media all and (max-width: 640px) {
+  .menu {
+    font-size: 2em;
+  }
 }
 
 @media all and (max-width: 568px) {
-  .go-down {
-    display: none;
+  .menu {
+    font-size: 1em;
+    height: initial;
+    padding: 1em 10px;
   }
 }

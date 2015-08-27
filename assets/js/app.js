@@ -14,10 +14,10 @@
 (function ($) {
   $(function () {
     var didScroll = false,
-      icon = $('.huge-title, .go-down.go-down--floating, .main-container#lang-selector'),
+      icon = $('.huge-title, .go-down, .language-selector--fixed'),
       $window = $(window),
       distance = $('.wrapper').offset().top,
-      $menu = $('#menu-bar');
+      $menu = $('.menu');
 
     $window.scroll(function () {
       didScroll = true;

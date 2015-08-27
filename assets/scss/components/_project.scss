@@ -1,0 +1,59 @@
+// This file is part of the benatespina.com.
+//
+// Copyright (c) 2015 Beñat Espiña <benatespina@gmail.com>
+//
+// For the full copyright and license information, please view the LICENSE
+// file that was distributed with this source code.
+//
+// @author Beñat Espiña <benatespina@gmail.com>
+
+.infopanel a {
+  font-size: inherit;
+  line-height: 0;
+
+  .project {
+    color: $white;
+    font-size: 1em;
+
+    &:hover {
+      color: $dark-blue;
+    }
+  }
+}
+
+.infopanel a img {
+  border-radius: 2px;
+  background: $turquoise;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background: $dark-blue;
+  }
+}
+
+.infopanel {
+  background: none repeat scroll 0 0 $dark-blue;
+  border-radius: 3px;
+  box-shadow: none;
+  margin-bottom: 1.25em;
+  margin-top: -4px;
+  padding: 23px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background: none repeat scroll 0 0 $turquoise;
+  }
+
+  p,
+  a {
+    font-size: 14px;
+    line-height: 1.4em;
+  }
+
+  h5 {
+    margin-top: 17px;
+    padding: 0;
+    text-transform: uppercase;
+  }
+}

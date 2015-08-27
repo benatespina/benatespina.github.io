@@ -7,10 +7,6 @@
     font-size: 65px;
   }
 
-  .huge-title {
-    top: 25%;
-  }
-
   .parallax {
     background-size: cover;
     background: scroll center center;
@@ -21,15 +17,12 @@
   }
 }
 
-@media all and (max-width: 768px) {
-  .bigspace {
-    height: 1em;
-  }
-
+@media all and (max-width: 1024px) {
   .center-align {
     margin-left: 4%;
   }
 
+  .one_third_last,
   .one_third {
     margin-right: 0;
     text-align: left;
@@ -37,19 +30,7 @@
 
     &.skill {
       text-align: left;
-      width: 49%;
       margin-right: 1%;
-    }
-  }
-
-  .one_third_last {
-    text-align: left;
-    width: 100%;
-
-    &.skill {
-      margin-right: 0;
-      text-align: left;
-      width: 49%;
     }
   }
 
@@ -58,17 +39,6 @@
     width: 100%;
   }
 
-  .huge-title {
-    top: 25%;
-    width: 80%;
-  }
-
-  #menu-bar #lang-selector a {
-    margin-right: 10px;
-  }
-}
-
-@media all and (max-width: 640px) {
   p {
     font-size: 19px;
   }
@@ -91,10 +61,6 @@
     width: 600px;
   }
 
-  #menu-bar a span {
-    font-size: 2em;
-  }
-
   .education-content,
   .professional-content {
     width: 80%;
@@ -102,17 +68,8 @@
 }
 
 @media all and (max-width: 568px) {
-  [class^="icon-"],
-  [class*=" icon-"] {
-    margin: 0;
-  }
-
-  .one_third_last.skill,
   .one_third.skill {
-    font-size: 65%;
-    margin: 40px auto 0;
-    text-align: left;
-    width: 70%;
+    font-size: 50%;
   }
 
   .two_third_last {
@@ -122,10 +79,6 @@
       display: inherit;
       margin: inherit;
     }
-  }
-
-  #godown {
-    display: none;
   }
 
   h1 {
@@ -142,38 +95,9 @@
     font-size: 12px;
     text-align: center;
   }
-
-  .huge-title {
-    width: 80%;
-    top: 30%;
-  }
-
-  .social {
-    font-size: 2em;
-  }
-
-  #menu-bar {
-    height: initial;
-
-    a span {
-      font-size: 1em;
-      padding: 1em 10px;
-    }
-
-    #lang-selector a {
-      display: none;
-    }
-  }
 }
 
 @media all and (max-width: 360px) {
-  [class^="icon-"],
-  [class*=" icon-"] {
-    display: inline-block;
-    margin: 0;
-  }
-
-  .one_third_last.skill,
   .one_third.skill {
     margin: 0;
     text-align: center;

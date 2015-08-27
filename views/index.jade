@@ -1,22 +1,14 @@
 include base
 body
+  include main
   header
-    #menu-bar
-      #lang-selector
-        a.buzz(href='/eu') eu
-        a.buzz(href='/es') es
-        a.buzz(href='/en') en
-      include social
-  .main-container
-    .huge-title
-      img.headshot(src='me-255x255.png', alt='Beñat Espiña')
-      h1 Be&ntilde;at Espi&ntilde;a
-      include social
-    .go-down.go-down--floating=__('godown')
-    #lang-selector
-      a.buzz(href='/eu') eu
-      a.buzz(href='/es') es
-      a.buzz(href='/en') en
+    nav.menu
+      .language-selector.language-selector--left
+        a.language-selector__language(href='/eu') eu
+        a.language-selector__language(href='/es') es
+        a.language-selector__language(href='/en') en
+      .social.social--right
+        include social
   .wrapper
     .container
       .content
@@ -27,23 +19,23 @@ body
           p=__('skills')
         .half_column2
           .one_third.centered.skill
-            span.icon-symfony
-            span.icon-php
-            span.icon-mysql
-            span.icon-doctrine
-            span.icon-git
+            span.skill.icon-symfony
+            span.skill.icon-php
+            span.skill.icon-mysql
+            span.skill.icon-doctrine
+            span.skill.icon-git
           .one_third.centered.skill
-            span.icon-html5
-            span.icon-css3
-            span.icon-javascript
-            span.icon-jquery
-            span.icon-sass
+            span.skill.icon-html5
+            span.skill.icon-css3
+            span.skill.icon-javascript
+            span.skill.icon-jquery
+            span.skill.icon-sass
           .one_third.centered.skill
-            span.icon-backbone
-            span.icon-java
-            span.icon-mongodb
-            span.icon-nodejs
-            span.icon-nginx
+            span.skill.icon-backbone
+            span.skill.icon-java
+            span.skill.icon-mongodb
+            span.skill.icon-nodejs
+            span.skill.icon-nginx
     .container
       .professional-content
         .two_third_last
@@ -67,7 +59,7 @@ body
           h5 Serikat
           span.date=__('serikatDate')
           p=__('serikatDescription')
-        .bigspace.line-break
+        .big-space.divider-top
       .education-content
         .two_third_last
           h3=__('computerEngineering')

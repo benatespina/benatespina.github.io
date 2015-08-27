@@ -1,0 +1,45 @@
+// This file is part of the benatespina.com.
+//
+// Copyright (c) 2015 Beñat Espiña <benatespina@gmail.com>
+//
+// For the full copyright and license information, please view the LICENSE
+// file that was distributed with this source code.
+//
+// @author Beñat Espiña <benatespina@gmail.com>
+
+.main-container {
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+
+  .huge-title {
+    bottom: 0;
+    left: 5%;
+    position: fixed;
+    right: 0;
+    text-align: left;
+    top: 30%;
+    width: 90%;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .huge-title {
+    top: 25%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .huge-title {
+    top: 25%;
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 568px) {
+  .huge-title {
+    width: 80%;
+    top: 30%;
+  }
+}

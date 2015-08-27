@@ -7,13 +7,13 @@
 //
 // @author Beñat Espiña <benatespina@gmail.com>
 
-.social {}
-
-.social__icon {
-  font-size: 3em;
-  margin: 5px;
+.big-space {
+  clear: both;
+  height: 2em;
 }
 
-.social__icon--buzz {
-  @extend %buzz;
+@media all and (max-width: 768px) {
+  .big-space {
+    height: 1em;
+  }
 }
