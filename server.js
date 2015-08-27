@@ -35,7 +35,7 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 app.use(session({
-  secret: 'iraupenaseguruaholkularitza',
+  secret: 'benatespinapersonalweb',
   resave: true,
   saveUninitialized: true
 }));
