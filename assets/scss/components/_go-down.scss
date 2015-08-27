@@ -1,0 +1,14 @@
+.go-down {
+  bottom: 20px;
+  color: $white;
+  height: 80px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.go-down--floating {
+  @extend %floating;
+}

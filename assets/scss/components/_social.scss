@@ -1,0 +1,10 @@
+.social {}
+
+.social__icon {
+  font-size: 3em;
+  margin: 5px;
+}
+
+.social__icon--buzz {
+  @extend %buzz;
+}

@@ -1,0 +1,14 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.headshot {
+  border: 5px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  height: auto;
+  margin-bottom: 20px;
+  width: 170px;
+}

@@ -3,20 +3,20 @@ body
   header
     #menu-bar
       #lang-selector
-        a.buzz(href="/eu") eu
-        a.buzz(href="/es") es
-        a.buzz(href="/en") en
+        a.buzz(href='/eu') eu
+        a.buzz(href='/es') es
+        a.buzz(href='/en') en
       include social
   .main-container
     .huge-title
       img.headshot(src='me-255x255.png', alt='Beñat Espiña')
       h1 Be&ntilde;at Espi&ntilde;a
       include social
-    #godown.floating=__('godown')
+    .go-down.go-down--floating=__('godown')
     #lang-selector
-        a.buzz(href="/eu") eu
-        a.buzz(href="/es") es
-        a.buzz(href="/en") en
+      a.buzz(href='/eu') eu
+      a.buzz(href='/es') es
+      a.buzz(href='/en') en
   .wrapper
     .container
       .content
@@ -48,11 +48,19 @@ body
       .professional-content
         .two_third_last
           h3=__('developer')
-          h5 Boletus Network S.L.
+          h5 LIN3S
+          span.date=__('lin3sDate')
+          p=__('lin3sDescription')
+          h3=__('developer')
+          h5 Wlingua
+          span.date=__('wlinguaDate')
+          p=__('wlinguaDescription')
+          h3=__('developer')
+          h5 Boletus Network
           span.date=__('boletusDate')
           p=__('boletusDescription')
           h3=__('developer')
-          h5 BoSo Group S.L.
+          h5 BoSo Group
           span.date=__('bosoDate')
           p=__('bosoDescription')
           h3=__('internDeveloper')
@@ -81,7 +89,7 @@ body
               a(href='http://kreta.io' target='_blank')
                   img(src='kreta.png', alt='Kreta')
               h5 Kreta
-                a(href='https://github.com/kreta-io/kreta')
+                a(href='https://github.com/kreta-io')
                   span.buzz.project.icon-github
               p
                 | Modern PHP written and open source project manager.
@@ -106,8 +114,10 @@ body
             .infopanel
               a
                   img(src='vagrant.png', alt='Vagrant')
-              h5 Puppet Vagrant VM
+              h5 Puppet & Ansible Vagrant VM
                 a(href='https://github.com/benatespina/default-vagrant')
+                  span.buzz.project.icon-github
+                a(href='https://github.com/benatespina/ansible-vagrant')
                   span.buzz.project.icon-github
               p
                 | PHP development focused VM with different envs that provides some other useful tools.

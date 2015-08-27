@@ -13,20 +13,20 @@ routes = require('./routing');
 app = express();
 
 i18n.configure({
-    locales: ['eu', 'es', 'en'],
-    cookie: 'locale',
-    defaultLocale: 'eu',
-    directory: __dirname + '/locales'
+  locales: ['eu', 'es', 'en'],
+  cookie: 'locale',
+  defaultLocale: 'eu',
+  directory: __dirname + '/locales'
 });
 
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({
-    extended: true
+  extended: true
 }));
 app.use(session({
-    secret: 'iraupenaseguruaholkularitza',
-    resave: true,
-    saveUninitialized: true
+  secret: 'iraupenaseguruaholkularitza',
+  resave: true,
+  saveUninitialized: true
 }));
 app.use(bodyParser.json());
 app.set('view engine', 'jade');
@@ -40,8 +40,8 @@ routes(app);
 var port = process.env.PORT || 8081;
 app.listen(port);
 console.log('benatespina\'s web started on port ' + port);
-setInterval(function() {
-    return http.get('benatespina.herokuapp.com', function () {
-        return console.log('Heroku, you cannot sleep!');
-    });
+setInterval(function () {
+  return http.get('benatespina.herokuapp.com', function () {
+    return console.log('Heroku, you cannot sleep!');
+  });
 }, 3300000);
