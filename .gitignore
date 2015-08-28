@@ -8,6 +8,7 @@
 # @author Beñat Espiña <benatespina@gmail.com>
 
 *.sass-cache
+bower
 npm-debug.log
 node_modules
 !public/.gitkeep

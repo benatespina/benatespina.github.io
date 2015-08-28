@@ -11,6 +11,7 @@
   @extend %floating;
   bottom: 20px;
   color: $white;
+  display: none;
   height: 80px;
   left: 0;
   position: fixed;
@@ -19,8 +20,8 @@
   width: 100%;
 }
 
-@media all and (max-width: 568px) {
+@media #{$medium-up} {
   .go-down {
-    display: none;
+    display: inherit;
   }
 }

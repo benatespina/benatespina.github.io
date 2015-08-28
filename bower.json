@@ -1,0 +1,19 @@
+{
+  "name": "benatespina.com",
+  "description": "benatespina's personal web page",
+  "version": "2.0.0",
+  "author": "Beñat Espiña - @benatespina",
+  "homepage": "http://benatespina.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/benatespina/personal.git"
+  },
+  "license": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "dependencies": {
+    "foundation": "~5.5"
+  }
+}

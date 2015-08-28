@@ -9,6 +9,7 @@
 
 [class^="icon-"],
 [class*=" icon-"] {
+  display: inline-block;
   font-family: 'icomoon', 'sans-serif';
   font-size: 5em;
   font-style: normal;
@@ -112,6 +113,7 @@
 
 .social--right {
   float: right;
+  margin: 10px;
 
   .social__icon {
     font-size: 1em;
@@ -125,9 +127,9 @@
 
 .social__icon {
   color: $dark-blue;
-  font-size: 3em;
+  font-size: 1em;
   margin: 5px;
-  padding: 10px;
+  padding: 0;
 
   &:hover {
     color: $turquoise;
@@ -140,37 +142,31 @@
 
 .skill {
   color: $dark-blue;
+  margin: 10px;
 
   &:hover {
     color: $turquoise;
   }
 }
 
-@media all and (max-width: 360px) {
+@media #{$small-up} {
   [class^="icon-"],
   [class*=" icon-"] {
-    display: inline-block;
-  }
-
-  .skill {
-    margin: 10px;
-  }
-
-  .social__icon {
-    font-size: 1em;
-    padding: 0;
+    display: initial;
   }
 }
 
-@media all and (max-width: 475px) {
-  .social__icon {
-    font-size: 1em;
-    padding: 0;
-  }
-}
-
-@media all and (min-width: 568px) {
+@media #{$medium-up} {
   .social {
     font-size: inherit;
+  }
+
+  .social--right {
+    margin: 0;
+  }
+  
+  .social__icon {
+    font-size: 3em;
+    padding: 10px;
   }
 }
