@@ -8,8 +8,7 @@
 # @author Beñat Espiña <benatespina@gmail.com>
 
 /.gitignore
-/app
+/assets
 /gulpfile.js
 /LICENSE
 /README.md
-/source
