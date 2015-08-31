@@ -14,7 +14,7 @@
 (function ($) {
   $(function () {
     var didScroll = false,
-      icon = $('.huge-title, .go-down, .language-selector--fixed'),
+      icon = $('.main__me, .go-down, .language-selector--fixed'),
       $window = $(window),
       distance = $('.wrapper').offset().top,
       $menu = $('.menu');

@@ -1,7 +1,7 @@
 include base
 body
   include main
-  header
+  header.header
     nav.menu
       .language-selector.language-selector--left
         a.language-selector__language(href='/eu') eu
@@ -10,126 +10,119 @@ body
       .social.social--right
         include social
   .wrapper
-    .container
-      .content
+    .content
+      .content__me
         p=__('aboutMe')
-    .parallax
-      .content
-        .half_column1
-          p=__('skills')
-        .half_column2
-          .one_third.centered.skill
-            span.skill.icon-symfony
-            span.skill.icon-php
-            span.skill.icon-mysql
-            span.skill.icon-doctrine
-            span.skill.icon-git
-          .one_third.centered.skill
-            span.skill.icon-html5
-            span.skill.icon-css3
-            span.skill.icon-javascript
-            span.skill.icon-jquery
-            span.skill.icon-sass
-          .one_third.centered.skill
-            span.skill.icon-backbone
-            span.skill.icon-java
-            span.skill.icon-mongodb
-            span.skill.icon-nodejs
-            span.skill.icon-nginx
-    .container
-      .professional-content
-        .two_third_last
-          h3=__('developer')
-          h5 LIN3S
-          span.date=__('lin3sDate')
-          p=__('lin3sDescription')
-          h3=__('developer')
-          h5 Wlingua
-          span.date=__('wlinguaDate')
-          p=__('wlinguaDescription')
-          h3=__('developer')
-          h5 Boletus Network
-          span.date=__('boletusDate')
-          p=__('boletusDescription')
-          h3=__('developer')
-          h5 BoSo Group
-          span.date=__('bosoDate')
-          p=__('bosoDescription')
-          h3=__('internDeveloper')
-          h5 Serikat
-          span.date=__('serikatDate')
-          p=__('serikatDescription')
+    .parallax-content
+      .parallax-content__left-column
+        p=__('skills')
+      .parallax-content__right-column
+        span.skill.icon-symfony
+        span.skill.icon-php
+        span.skill.icon-mysql
+        span.skill.icon-doctrine
+        span.skill.break-line.icon-git
+        span.skill.icon-html5
+        span.skill.icon-css3
+        span.skill.icon-javascript
+        span.skill.icon-jquery
+        span.skill.break-line.icon-sass
+        span.skill.icon-backbone
+        span.skill.icon-java
+        span.skill.icon-mongodb
+        span.skill.icon-nodejs
+        span.skill.icon-nginx
+    .content
+      .content__professional
+        h3.content__role=__('developer')
+        h5.content__place LIN3S
+        span.content__date=__('lin3sDate')
+        p.content__description=__('lin3sDescription')
+        h3.content__role=__('developer')
+        h5.content__place Wlingua
+        span.content__date=__('wlinguaDate')
+        p.content__description=__('wlinguaDescription')
+        h3.content__role=__('developer')
+        h5.content__place Boletus Network
+        span.content__date=__('boletusDate')
+        p.content__description=__('boletusDescription')
+        h3.content__role=__('developer')
+        h5.content__place BoSo Group
+        span.content__date=__('bosoDate')
+        p.content__description=__('bosoDescription')
+        h3.content__role=__('internDeveloper')
+        h5.content__place Serikat
+        span.content__date=__('serikatDate')
+        p.content__description=__('serikatDescription')
         .big-space.divider-top
-      .education-content
-        .two_third_last
-          h3=__('computerEngineering')
-          h5=__('universityOfDeusto')
-          span.date=__('computerEngineeringDate')
-        .two_third_last
-          h3=__('postgraduate')
-          h5=__('universityOfDeusto')
-          span.date=__('postgraduateDate')
-        .two_third_last
-          h3=__('mongodbCertificate')
-          h5=__('mongodbUniversity')
-          span.date=__('mongodbCertificateDate')
-    .parallax
-      .portfolio-content
-        .center-align
-          .one_third
-            .infopanel
-              a(href='http://kreta.io' target='_blank')
-                  img(src='kreta.png', alt='Kreta')
-              h5 Kreta
-                a(href='https://github.com/kreta-io')
-                  span.buzz.project.icon-github
-              p
-                | Modern PHP written and open source project manager.
-                br
-          .one_third
-            .infopanel
-              a(href='http://boletus.com' target='_blank')
-                  img(src='boletus.png', alt='Boletus')
-              h5 Boletus
-              p
-                | Ahorra y gana dinero con los comercios de tu ciudad.
-          .one_third_last
-            .infopanel
-              a
-                  img(src='stackexchangeapiclient.png', alt='Stack Exchange Api Client')
-              h5 Stack Exchange Api Client
-                a(href='https://github.com/benatespina/StackExchangeApiClient')
-                  span.buzz.project.icon-github
-              p
-                | Stack Exchange's version 2.2 REST API PHP client.
-          .one_third
-            .infopanel
-              a
-                  img(src='vagrant.png', alt='Vagrant')
-              h5 Puppet & Ansible Vagrant VM
-                a(href='https://github.com/benatespina/default-vagrant')
-                  span.buzz.project.icon-github
-                a(href='https://github.com/benatespina/ansible-vagrant')
-                  span.buzz.project.icon-github
-              p
-                | PHP development focused VM with different envs that provides some other useful tools.
-          .one_third
-            .infopanel
-              a(href='http://myclapboard.com' target='_blank')
-                  img(src='myclapboard.png', alt='myClapboard')
-              h5 myClapboard
-                a(href='https://github.com/myClapboard')
-                  span.buzz.project.icon-github
-              p
-                | Social network that geared to film and television.
-          .one_third_last
-            .infopanel
-              a(href='http://alotofus.com' target='_blank')
-                  img(src='alotofus.png', alt='Alotofus')
-              h5 Alotofus
-              p
-                | Plataforma de empleo, que agiliza los procesos de selección ofreciendo candidatos válidos.
-    footer
-      p.centered.copyright Copyright 2015 - Be&ntilde;at Espi&ntilde;a
+      .content__education
+        h3.content__role=__('computerEngineering')
+        h5.content__place=__('universityOfDeusto')
+        span.content__date=__('computerEngineeringDate')
+        .big-space
+        h3.content__role=__('postgraduate')
+        h5.content__place=__('universityOfDeusto')
+        span.content__date=__('postgraduateDate')
+        .big-space
+        h3.content__role=__('mongodbCertificate')
+        h5.content__place=__('mongodbUniversity')
+        span.content__date=__('mongodbCertificateDate')
+    .parallax-content
+      .parallax-content__portfolio
+        .project
+          .project__project
+            a.project__link(href='http://kreta.io' target='_blank')
+                img.project__image(src='kreta.png', alt='Kreta')
+            h5.project__title Kreta
+              a(href='https://github.com/kreta-io')
+                span.project__source-code.icon-github
+            p.project__description
+              | Modern PHP written and open source project manager.
+              br
+        .project
+          .project__project
+            a.project__link(href='http://boletus.com' target='_blank')
+                img.project__image(src='boletus.png', alt='Boletus')
+            h5.project__title Boletus
+            p.project__description
+              | Ahorra y gana dinero con los comercios de tu ciudad.
+        .project.project--last
+          .project__project
+            a.project__link
+                img.project__image(src='stackexchangeapiclient.png', alt='Stack Exchange Api Client')
+            h5.project__title Stack Exchange Api Client
+              a(href='https://github.com/benatespina/StackExchangeApiClient')
+                span.project__source-code.icon-github
+            p.project__description
+              | Stack Exchange's version 2.2 REST API PHP client.
+        .project
+          .project__project
+            a.project__link
+                img.project__image(src='vagrant.png', alt='Vagrant')
+            h5.project__title Puppet & Ansible Vagrant VM
+              a(href='https://github.com/benatespina/default-vagrant')
+                span.project__source-code.icon-github
+              a(href='https://github.com/benatespina/ansible-vagrant')
+                span.project__source-code.icon-github
+            p.project__description
+              | PHP development focused VM with different envs that provides some other useful tools.
+        .project
+          .project__project
+            a.project__link(href='http://myclapboard.com' target='_blank')
+                img.project__image(src='myclapboard.png', alt='myClapboard')
+            h5.project__title myClapboard
+              a(href='https://github.com/myClapboard')
+                span.project__source-code.icon-github
+            p.project__description
+              | Social network that geared to film and television.
+        .project.project--last
+          .project__project
+            a.project__link(href='http://alotofus.com' target='_blank')
+                img.project__image(src='alotofus.png', alt='Alotofus')
+            h5.project__title Alotofus
+            p.project__description
+              | Plataforma de empleo, que agiliza los procesos de selección ofreciendo candidatos válidos.
+    footer.footer
+      p.footer__copyright Copyright 2015 - Be&ntilde;at Espi&ntilde;a
     script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
     script(type='text/javascript', src='js/app.min.js')

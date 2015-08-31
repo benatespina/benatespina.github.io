@@ -7,7 +7,7 @@
 //
 // @author Beñat Espiña <benatespina@gmail.com>
 
-%floating{
+%floating {
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
   animation-name: floating;
@@ -15,7 +15,7 @@
 
 %buzz {
   &:hover {
-    animation-duration: 0.15s;
+    animation-duration: .15s;
     animation-iteration-count: infinite;
     animation-name: buzz;
     animation-timing-function: linear;
@@ -40,7 +40,7 @@
   50% {
     transform: translateX(3px) rotate(2deg);
   }
-  
+
   100% {
     transform: translateX(-3px) rotate(-2deg);
   }

@@ -9,9 +9,9 @@
 
 [class^="icon-"],
 [class*=" icon-"] {
-  display: inline-block;
   font-family: 'icomoon', 'sans-serif';
   font-size: 5em;
+  -webkit-font-smoothing: antialiased;
   font-style: normal;
   font-variant: normal;
   font-weight: normal;
@@ -20,7 +20,6 @@
   speak: none;
   text-transform: none;
   transition: all .3s ease-in-out;
-  -webkit-font-smoothing: antialiased;
 }
 
 .icon-mail:before {
@@ -107,6 +106,16 @@
   content: '\e6a4';
 }
 
+.skill {
+  color: $dark-blue;
+  font-size: 3em;
+  margin: 5px;
+
+  &:hover {
+    color: $turquoise;
+  }
+}
+
 .social {
   font-size: 2em;
 }
@@ -116,8 +125,8 @@
   margin: 10px;
 
   .social__icon {
-    font-size: 1em;
     color: $turquoise;
+    font-size: 1em;
 
     &:hover {
       color: $white;
@@ -140,23 +149,12 @@
   @extend %buzz;
 }
 
-.skill {
-  color: $dark-blue;
-  margin: 10px;
-
-  &:hover {
-    color: $turquoise;
-  }
-}
-
-@media #{$small-up} {
-  [class^="icon-"],
-  [class*=" icon-"] {
-    display: initial;
-  }
-}
-
 @media #{$medium-up} {
+
+  .skill {
+    font-size: 5em;
+  }
+
   .social {
     font-size: inherit;
   }
@@ -164,9 +162,15 @@
   .social--right {
     margin: 0;
   }
-  
+
   .social__icon {
     font-size: 3em;
     padding: 10px;
+  }
+}
+
+@media #{$large-up} {
+  .skill {
+    margin: 10px;
   }
 }

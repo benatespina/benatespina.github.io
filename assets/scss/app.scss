@@ -13,160 +13,18 @@
 @import 'base/common';
 @import 'base/typography';
 
-@import 'helpers/keyframes';
-@import 'helpers/dividers';
-@import 'helpers/spacing';
-
-@import 'layout/footer';
-@import 'layout/header';
-@import 'layout/main';
-
-.date {
-  color: $white;
-  font-size: 14px;
-  font-weight: 600;
-  margin-top: 15px;
-  padding: 15px 0 20px;
-}
-
-.container {
-  background: none repeat scroll 0 0 $turquoise;
-  overflow: auto;
-  padding: 80px 0;
-  width: 100%;
-}
-
-.parallax {
-  overflow: auto;
-  padding: 80px 0;
-  background-size: cover;
-  background: fixed center center;
-
-  p,
-  h2 {
-    color: $white;
-  }
-}
-
-.wrapper {
-  background: none repeat scroll 0 0 transparent;
-  position: absolute;
-  width: 100%;
-}
-
-.education-content,
-.professional-content {
-  margin: 0 auto;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-  width: 50%;
-  z-index: 80;
-
-  p {
-    font-size: 15px;
-    margin-bottom: 3em;
-  }
-}
-
-.portfolio-content {
-  margin: 0 auto;
-  max-width: 1170px;
-  overflow: hidden;
-  position: relative;
-  text-align: left;
-  width: 80%;
-  z-index: 80;
-}
-
-.content {
-  margin: 0 auto;
-  max-width: 1170px;
-  overflow: hidden;
-  position: relative;
-  text-align: left;
-  width: 80%;
-  z-index: 80;
-}
-
-.centered {
-  text-align: center !important;
-}
-
-.half_column1 {
-  float: left;
-  margin-top: 5%;
-  width: 48%;
-}
-
-.half_column2 {
-  font-size: 80%;
-  float: right;
-  margin-top: 5%;
-  width: 48%;
-}
-
-.one_third {
-  margin-right: 3.5%;
-}
-
-.one_third,
-.one_third_last {
-  margin-bottom: 5%;
-  text-align: left;
-  width: 31%;
-}
-
-.two_third_last {
-  margin-bottom: 5%;
-}
-
-.portfolio-content {
-  .one_third_last,
-  .one_third {
-    display: inline-block;
-    margin-bottom: 0;
-    margin-top: 5%;
-  }
-}
-
-.one_third_last img,
-.one_third img,
-.half_column1 img,
-.half_column2 img {
-  height: auto;
-  width: 100%;
-}
-
-.one_third_last h2,
-.one_third h2 {
-  font-size: 32px;
-  opacity: 0.4;
-  padding: 0 0 10px 0;
-}
-
-.one_third_last h3,
-.one_third h3 {
-  font-weight: 500;
-  margin: 0;
-}
-
-.two_third_last {
-  h3 {
-    margin: 1px 0 10px 0;
-  }
-
-  h5 {
-    display: inline;
-    margin-right: 20px;
-    opacity: .7;
-  }
-}
-
-@import 'partials/medias';
-
 @import 'components/go-down';
 @import 'components/icons';
 @import 'components/language-selector';
 @import 'components/menu';
 @import 'components/project';
+
+@import 'helpers/keyframes';
+@import 'helpers/dividers';
+@import 'helpers/spacing';
+
+@import 'layout/content';
+@import 'layout/footer';
+@import 'layout/header';
+@import 'layout/main';
+@import 'layout/parallax-content';

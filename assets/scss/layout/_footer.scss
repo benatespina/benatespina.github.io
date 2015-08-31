@@ -7,11 +7,14 @@
 //
 // @author Beñat Espiña <benatespina@gmail.com>
 
-footer {
+.footer {
   background-color: $dark-blue;
   padding: 1px 0;
+  text-align: center;
+}
 
-  p {
-    color: $turquoise;
-  }
+.footer__copyright {
+  color: $turquoise;
+  font-size: 11px;
+  opacity: .7;
 }
