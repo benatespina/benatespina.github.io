@@ -1,0 +1,25 @@
+; This file is part of the benatespina.com.
+;
+; Copyright (c) 2015 Beñat Espiña <benatespina@gmail.com>
+;
+; For the full copyright and license information, please view the LICENSE
+; file that was distributed with this source code.
+;
+; @author Beñat Espiña <benatespina@gmail.com>
+
+root = true
+
+[*]
+end_of_line = LF
+
+[*.yml]
+indent_style = space
+indent_size = 4
+
+[*.{js, scss}]
+indent_style = space
+indent_size = 2
+
+[{*.json, .bowerrc}]
+indent_style = space
+indent_size = 2

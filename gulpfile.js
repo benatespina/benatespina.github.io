@@ -25,7 +25,6 @@ var paths = {
   fonts: './assets/fonts',
   img: './assets/img',
   js: './assets/js',
-  media: './assets/media',
   sass: './assets/scss',
   build: './public',
   buildJs: './public/js',
@@ -37,7 +36,7 @@ var watch = {
 };
 
 gulp.task('move', function () {
-  return gulp.src([paths.fonts + '/**', paths.media + '/**', paths.img + '/**'], {base: paths.assets})
+  return gulp.src([paths.fonts + '/**', paths.img + '/**'], {base: paths.assets})
     .pipe(gulp.dest(paths.build));
 });
 
@@ -53,7 +52,7 @@ gulp.task('sass', ['scss-lint'], function () {
 gulp.task('scss-lint', function () {
   return gulp.src([watch.sass, '!' + paths.sass + '/base/_reset.scss'])
     .pipe(scsslint({
-      'config': './.scss-lint.yml'
+      'config': './.scss_lint.yml'
     }));
 });
 
