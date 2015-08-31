@@ -11,5 +11,5 @@
 bower
 npm-debug.log
 node_modules
-!public/.gitkeep
 public
+!public/.gitkeep
