@@ -7,4 +7,4 @@
 #
 # @author Beñat Espiña <benatespina@gmail.com>
 
-web: node server.js
+web: node node_modules/gulp/bin/gulp prod && npm start
