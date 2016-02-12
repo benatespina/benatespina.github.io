@@ -14,7 +14,7 @@
 var gulp = require('gulp'),
   autoprefixer = require('gulp-autoprefixer'),
   concat = require('gulp-concat'),
-  minifyCSS = require('gulp-minify-css'),
+  cssNano = require('gulp-cssnano'),
   rename = require('gulp-rename'),
   sass = require('gulp-sass'),
   scsslint = require('gulp-scss-lint'),
@@ -62,7 +62,7 @@ gulp.task('sass:prod', function () {
       errLogToConsole: true
     }))
     .pipe(autoprefixer())
-    .pipe(minifyCSS({keepSpecialComments: 0}))
+    .pipe(cssNano({keepSpecialComments: 0}))
     .pipe(rename({
       suffix: '.min'
     }))

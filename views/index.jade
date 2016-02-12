@@ -74,7 +74,7 @@ body
             a.project__link(href='http://kreta.io' target='_blank')
                 img.project__image(src='kreta.png', alt='Kreta')
             h5.project__title Kreta
-              a(href='https://github.com/kreta-io')
+              a(href='https://github.com/kreta')
                 span.project__source-code.icon-github
             p.project__description
               | Modern PHP written and open source project manager.
@@ -123,6 +123,15 @@ body
             p.project__description
               | Plataforma de empleo, que agiliza los procesos de selección ofreciendo candidatos válidos.
     footer.footer
-      p.footer__copyright Copyright 2015 - Be&ntilde;at Espi&ntilde;a
+      p.footer__copyright Copyright 2016 - Be&ntilde;at Espi&ntilde;a
     script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
     script(type='text/javascript', src='js/app.min.js')
+
+    script.
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-44215818-1 ', 'auto');
+      ga('send', 'pageview');
