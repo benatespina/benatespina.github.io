@@ -34,7 +34,6 @@ app.use(bodyParser.json());
 app.set('view engine', 'jade');
 
 app.set('views', './views');
-app.use(express.static(__dirname + '/img'));
 app.use(express.static(__dirname + '/'));
 routes(app);
 
