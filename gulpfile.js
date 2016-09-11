@@ -24,8 +24,7 @@ var
     assets: './assets',
     jade: './views',
     sass: './assets/scss',
-    build: './static',
-    css: './static/css'
+    css: './css'
   }, watch = {
     sass: './assets/scss/**/*.scss'
   };

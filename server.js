@@ -34,8 +34,8 @@ app.use(bodyParser.json());
 app.set('view engine', 'jade');
 
 app.set('views', './views');
-app.use(express.static(__dirname + '/public/img'));
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/img'));
+app.use(express.static(__dirname + '/'));
 routes(app);
 
 var port = process.env.PORT || 8081;
