@@ -11,43 +11,24 @@
 
 'use strict';
 
-var gulp = require('gulp'),
+var
+  gulp = require('gulp'),
   autoprefixer = require('gulp-autoprefixer'),
-  concat = require('gulp-concat'),
   cssNano = require('gulp-cssnano'),
-  rename = require('gulp-rename'),
+  jade = require('gulp-jade'),
   sass = require('gulp-sass'),
-  scsslint = require('gulp-scss-lint'),
-  uglify = require('gulp-uglify');
+  scsslint = require('gulp-scss-lint');
 
-var paths = {
-  assets: './assets',
-  fonts: './assets/fonts',
-  img: './assets/img',
-  js: './assets/js',
-  sass: './assets/scss',
-  build: './public',
-  buildJs: './public/js',
-  css: './public/css'
-};
-
-var watch = {
-  sass: './assets/scss/**/*.scss'
-};
-
-gulp.task('move', function () {
-  return gulp.src([paths.fonts + '/**', paths.img + '/**'], {base: paths.assets})
-    .pipe(gulp.dest(paths.build));
-});
-
-gulp.task('sass', ['scss-lint'], function () {
-  return gulp.src(paths.sass + '/app.scss')
-    .pipe(sass({
-      errLogToConsole: true
-    }))
-    .pipe(autoprefixer())
-    .pipe(gulp.dest(paths.css));
-});
+var
+  paths = {
+    assets: './assets',
+    jade: './views',
+    sass: './assets/scss',
+    build: './static',
+    css: './static/css'
+  }, watch = {
+    sass: './assets/scss/**/*.scss'
+  };
 
 gulp.task('scss-lint', function () {
   return gulp.src([watch.sass, '!' + paths.sass + '/base/_reset.scss'])
@@ -56,37 +37,27 @@ gulp.task('scss-lint', function () {
     }));
 });
 
-gulp.task('sass:prod', function () {
+gulp.task('sass', ['scss-lint'], function () {
   return gulp.src(paths.sass + '/app.scss')
     .pipe(sass({
       errLogToConsole: true
     }))
     .pipe(autoprefixer())
     .pipe(cssNano({keepSpecialComments: 0}))
-    .pipe(rename({
-      suffix: '.min'
-    }))
     .pipe(gulp.dest(paths.css));
 
 });
 
-gulp.task('js', function () {
-  return gulp.src([paths.js + '/*.js'])
-    .pipe(concat('app.js'))
-    .pipe(gulp.dest(paths.buildJs));
-});
-
-gulp.task('js:prod', function () {
-  return gulp.src([paths.js + '/*.js'])
-    .pipe(concat('app.min.js'))
-    .pipe(uglify())
-    .pipe(gulp.dest(paths.buildJs));
+gulp.task('jade', function () {
+  gulp.src(paths.jade + '/index.jade')
+    .pipe(jade({
+      pretty: true
+    }))
+    .pipe(gulp.dest('.'))
 });
 
 gulp.task('watch', function () {
   gulp.watch(watch.sass, ['sass']);
 });
 
-gulp.task('default', ['move', 'sass', 'js']);
-
-gulp.task('prod', ['move', 'sass:prod', 'js:prod']);
+gulp.task('default', ['sass', 'jade']);
