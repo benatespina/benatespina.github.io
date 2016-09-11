@@ -7,6 +7,8 @@
 //
 // @author Beñat Espiña <benatespina@gmail.com>
 
+@import '../base/colors';
+
 * {
   box-sizing: border-box;
 
@@ -37,27 +39,4 @@ a {
 img {
   height: auto;
   width: 100%;
-}
-
-h3 {
-  letter-spacing: -1px;
-  line-height: 1.2em;
-  margin: 0 0 50px;
-  padding: 0;
-  text-transform: uppercase;
-}
-
-h5 {
-  font-weight: 600;
-  letter-spacing: 0;
-  line-height: 1.2em;
-  margin: 0;
-  padding: 0 0 10px;
-  text-align: left;
-}
-
-p {
-  color: $light-grey;
-  font-size: 21px;
-  line-height: 1.7em;
 }

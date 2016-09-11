@@ -1,5 +1,4 @@
 #My personal website
->All about my education, skills and experience.
 
 ##Prerequisites
 If you want to test the project you need the following requirements:
@@ -8,13 +7,12 @@ If you want to test the project you need the following requirements:
   * [Sass][2]: `gem install sass`
   * [Scss-lint][3]: `gem install scss-lint`
 2. [Node.js][4]
-  * [Bower][5]: `npm install -g bower`
-  * [Gulp.js][6]: `npm install -g gulp`
+  * [Gulp.js][5]: `npm install -g gulp`
 
 ##Getting Started
 After installing all the prerequisites, in order to **install all the dependencies** run the following command:
 ```
-$ npm install && bower install
+$ npm install
 ```
 
 **Generate all the required assets** using Gulp. You can also **watch** the changes or **compile in production mode**:
@@ -35,11 +33,10 @@ http://localhost:8081/
 ```
 
 ##Licensing Options
-[![License](https://img.shields.io/badge/license-MIT-408576.svg)](https://github.com/benatespina/personal/blob/master/LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-408576.svg)](https://github.com/benatespina/benatespina.github.io/blob/master/LICENSE)
 
 [1]: https://www.ruby-lang.org/en/downloads/
 [2]: http://sass-lang.com/
 [3]: https://github.com/brigade/scss-lint
 [4]: https://nodejs.org/download/
-[5]: http://bower.io/
-[6]: http://gulpjs.com/
+[5]: http://gulpjs.com/

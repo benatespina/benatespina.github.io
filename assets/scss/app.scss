@@ -7,23 +7,10 @@
 //
 // @author Beñat Espiña <benatespina@gmail.com>
 
-@import 'base/grid';
-@import 'base/colors';
 @import 'base/common';
 @import 'base/typography';
 
-@import 'components/go-down';
 @import 'components/icons';
-@import 'components/language-selector';
-@import 'components/menu';
-@import 'components/project';
+@import 'components/social';
 
-@import 'helpers/keyframes';
-@import 'helpers/dividers';
-@import 'helpers/spacing';
-
-@import 'layout/content';
-@import 'layout/footer';
-@import 'layout/header';
 @import 'layout/main';
-@import 'layout/parallax-content';

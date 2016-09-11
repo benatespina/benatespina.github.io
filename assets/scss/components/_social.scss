@@ -1,0 +1,55 @@
+// This file is part of the benatespina.com.
+//
+// Copyright (c) 2015 Beñat Espiña <benatespina@gmail.com>
+//
+// For the full copyright and license information, please view the LICENSE
+// file that was distributed with this source code.
+//
+// @author Beñat Espiña <benatespina@gmail.com>
+
+@import '../base/colors';
+@import '../base/grid';
+
+.social {
+  font-size: 2em;
+}
+
+.social--right {
+  float: right;
+  margin: 10px;
+
+  .social__icon {
+    color: $turquoise;
+    font-size: 1em;
+
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+.social__icon {
+  color: $dark-blue;
+  font-size: 1em;
+  margin: 5px;
+  padding: 0;
+
+  &:hover {
+    color: $turquoise;
+  }
+}
+
+@media #{$medium-up} {
+  .social {
+    font-size: inherit;
+  }
+
+  .social--right {
+    margin: 0;
+  }
+
+  .social__icon {
+    font-size: 3em;
+    padding: 10px;
+  }
+}

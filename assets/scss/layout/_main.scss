@@ -7,6 +7,11 @@
 //
 // @author Beñat Espiña <benatespina@gmail.com>
 
+@import '../base/grid';
+
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+
 .main {
   background-position: center center;
   background-size: cover;
@@ -15,13 +20,12 @@
 }
 
 .main__me {
-  bottom: 0;
-  left: 5%;
-  position: fixed;
-  right: 0;
-  text-align: left;
-  top: 30%;
-  width: 90%;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
 }
 
 .main__photo {
@@ -34,29 +38,35 @@
 
 .main__title {
   font-size: 40px;
+  font-weight: $font-weight-bold;
   letter-spacing: -3px;
   margin: 0;
   padding: 0 0 10px;
 }
 
-@media #{$medium-up} {
-  .main__me {
-    top: 25%;
-    width: 80%;
-  }
+.main__subtitle {
+  font-weight: $font-weight-regular;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
 
+@media #{$medium-up} {
   .main__title {
     font-size: 70px;
-    padding: 0 0 30px;
+    padding: 0;
+  }
+
+  .main__subtitle {
+    font-size: 20px;
   }
 }
 
 @media #{$large-up} {
-  .main__me {
-    width: 100%;
+  .main__title {
+    font-size: 80px;
   }
 
-  .main__title {
-    font-size: 100px;
+  .main__subtitle {
+    font-size: 40px;
   }
 }

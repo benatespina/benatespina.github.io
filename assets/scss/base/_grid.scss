@@ -25,9 +25,9 @@ $large-breakpoint: 1279 !default;
 $xlarge-breakpoint: 1440 !default;
 
 $small-range: (0, $small-breakpoint) !default;
-$medium-range: ($small-breakpoint  + 1, $medium-breakpoint) !default;
+$medium-range: ($small-breakpoint + 1, $medium-breakpoint) !default;
 $large-range: ($medium-breakpoint + 1, $large-breakpoint) !default;
-$xlarge-range: ($large-breakpoint  + 1, $xlarge-breakpoint) !default;
+$xlarge-range: ($large-breakpoint + 1, $xlarge-breakpoint) !default;
 $xxlarge-range: ($xlarge-breakpoint + 1, 99999999) !default;
 
 $screen: 'only screen';
