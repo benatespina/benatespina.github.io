@@ -7,7 +7,6 @@ If you want to test the project you need the following requirements:
   * [Sass][2]: `gem install sass`
   * [Scss-lint][3]: `gem install scss-lint`
 2. [Node.js][4]
-  * [Gulp.js][5]: `npm install -g gulp`
 
 ##Getting Started
 After installing all the prerequisites, in order to **install all the dependencies** run the following command:
@@ -15,11 +14,10 @@ After installing all the prerequisites, in order to **install all the dependenci
 $ npm install
 ```
 
-**Generate all the required assets** using Gulp. You can also **watch** the changes or **compile in production mode**:
+**Generate all the required assets** using [Gulp][5]. You can also **watch** the changes:
 ```
-$ gulp
-$ gulp watch
-$ gulp prod
+$ node_modules/.bin/gulp
+$ node_modules/.bin/gulp watch
 ```
 
 Finally, you only have to start the Node's server and voilà!
