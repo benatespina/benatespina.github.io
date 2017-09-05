@@ -1,6 +1,6 @@
-#My personal website
+# My personal website
 
-##Prerequisites
+## Prerequisites
 If you want to test the project you need the following requirements:
 
 1. [Ruby][1]
@@ -8,7 +8,7 @@ If you want to test the project you need the following requirements:
   * [Scss-lint][3]: `gem install scss-lint`
 2. [Node.js][4]
 
-##Getting Started
+## Getting Started
 After installing all the prerequisites, in order to **install all the dependencies** run the following command:
 ```
 $ npm install
@@ -30,7 +30,7 @@ Now, you can open the following url and that's all!
 http://localhost:8081/
 ```
 
-##Licensing Options
+## Licensing Options
 [![License](https://img.shields.io/badge/license-MIT-408576.svg)](https://github.com/benatespina/benatespina.github.io/blob/master/LICENSE)
 
 [1]: https://www.ruby-lang.org/en/downloads/
